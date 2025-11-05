@@ -5,31 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NMIXX - Korean Girl Group</title>
-    {{-- Memastikan vite berjalan --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="min-h-screen bg-gradient-to-b from-white to-pink-50">
 
     {{-- Hero Section (Tidak Diubah) --}}
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-pink-500/90 via-purple-500/90 to-blue-500/90 z-10"></div>
+    <section class="relative flex items-center justify-center h-screen overflow-hidden">
+        <div class="absolute inset-0 z-10 bg-gradient-to-r from-pink-500/90 via-purple-500/90 to-blue-500/90"></div>
         <img
-            src="https://images.unsplash.com/photo-1667013755556-683e463d72cc?w=1920"
+            src="https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/sign/nmixx-assets/NMIXX%20Full.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zOTBkZWY4OS03MWQ5LTQyY2QtOTI0NC03MDAyM2VlMmIxNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJubWl4eC1hc3NldHMvTk1JWFggRnVsbC5qcGciLCJpYXQiOjE3NjIzMjk5OTEsImV4cCI6MTc5Mzg2NTk5MX0.FCF3pMemzce6spBIgR6FazwuD7oFvz8H0t7wPuF-l-o"
             alt="NMIXX Performance"
-            class="absolute inset-0 w-full h-full object-cover">
-        <div class="relative z-20 text-center text-white px-4">
+            class="absolute inset-0 object-cover w-full h-full">
+        <div class="relative z-20 px-4 text-center text-white">
             <div class="mb-6">
-                <span class="inline-block bg-white text-purple-600 px-6 py-2 text-lg mb-4 rounded-full">
+                <span class="inline-block px-6 py-2 mb-4 text-lg text-purple-600 bg-white rounded-full">
                     K-POP Girl Group
                 </span>
             </div>
-            <h1 class="text-8xl mb-6 tracking-wider">NMIXX</h1>
-            <p class="text-3xl mb-4">엔믹스</p>
-            <p class="text-xl max-w-2xl mx-auto opacity-90">
-                Mix & Match - Where Different Worlds Come Together
+            <h1 class="mb-6 tracking-wider text-8xl">NMIXX</h1>
+            <p class="mb-4 text-3xl">엔믹스</p>
+            <p class="max-w-2xl mx-auto text-xl opacity-90">
+                "(N) Now, New, Next, and The Unknown N & Combination and diversity (Mix)"
             </p>
-            <div class="mt-8 flex items-center justify-center gap-4">
+            <div class="flex items-center justify-center gap-4 mt-8">
                 <div class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -39,7 +39,7 @@
                     </svg>
                     <span>6 Members</span>
                 </div>
-                <div class="h-6 w-px bg-white/50"></div>
+                <div class="w-px h-6 bg-white/50"></div>
                 <div class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
@@ -54,23 +54,24 @@
     </section>
 
     {{-- About Section (Tidak Diubah kecuali penambahan ID pada Achievements Grid) --}}
-    <section class="py-20 px-4 max-w-7xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-5xl mb-4">About NMIXX</h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto"></div>
+    <section class="px-4 py-20 mx-auto max-w-7xl">
+        <div class="mb-12 text-center">
+            <h2 class="mb-4 text-5xl">About NMIXX</h2>
+            <div class="w-24 h-1 mx-auto bg-gradient-to-r from-pink-500 to-purple-500"></div>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 items-center mb-16">
-            <div>
+        <div class="grid items-center gap-8 mb-16 md:grid-cols-2">
+            <div class="relative flex items-center justify-center w-full overflow-hidden bg-gray-200 rounded-lg shadow-2xl h-96">
                 <img
-                    src="https://images.unsplash.com/photo-1752830458085-746c80f17b43?w=800"
+                    src="https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/sign/nmixx-assets/nmixxx.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zOTBkZWY4OS03MWQ5LTQyY2QtOTI0NC03MDAyM2VlMmIxNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJubWl4eC1hc3NldHMvbm1peHh4LmpwZyIsImlhdCI6MTc2MjMzMDc3MywiZXhwIjoxNzkzODY2NzczfQ.-3QmsCDlvDi2i0ouLGr_t85ThuzL5Gc7ITu4E6NKJTI"
                     alt="NMIXX Stage"
-                    class="rounded-lg shadow-2xl w-full h-96 object-cover">
+                    class="absolute inset-0 object-cover object-center w-full h-full">
             </div>
+
             <div class="space-y-6">
                 <div>
-                    <h3 class="text-2xl mb-3">The Concept</h3>
-                    <p class="text-gray-700 leading-relaxed">
+                    <h3 class="mb-3 text-2xl">The Concept</h3>
+                    <p class="leading-relaxed text-gray-700">
                         NMIXX (엔믹스) is a six-member girl group under JYP Entertainment. The name combines
                         "N" (the letter representing the unknown and new) with "MIX" (combination),
                         symbolizing the group's concept of mixing different genres and styles to create
@@ -78,86 +79,77 @@
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-2xl mb-3">Musical Identity</h3>
-                    <p class="text-gray-700 leading-relaxed">
+                    <h3 class="mb-3 text-2xl">Musical Identity</h3>
+                    <p class="leading-relaxed text-gray-700">
                         Known for their signature "MIXX POP" genre, NMIXX combines multiple music genres
                         within a single song, creating a bold and experimental sound. Their powerful
                         performances showcase exceptional vocals, dynamic choreography, and genre-bending artistry.
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-3">
-                    <span class="inline-block bg-pink-500 text-white px-4 py-2 rounded-full">MIXX POP</span>
-                    <span class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full">Powerful Vocals</span>
-                    <span class="inline-block bg-blue-500 text-white px-4 py-2 rounded-full">Dynamic Performance</span>
-                    <span class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-full">Genre-Bending</span>
+                    <span class="inline-block px-4 py-2 text-white bg-pink-500 rounded-full">MIXX POP</span>
+                    <span class="inline-block px-4 py-2 text-white bg-purple-500 rounded-full">Powerful Vocals</span>
+                    <span class="inline-block px-4 py-2 text-white bg-blue-500 rounded-full">Dynamic Performance</span>
+                    <span class="inline-block px-4 py-2 text-white bg-indigo-500 rounded-full">Genre-Bending</span>
                 </div>
             </div>
         </div>
 
         {{-- Achievements Grid (ID Ditambahkan, Konten Dihapus) --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16" id="achievements-grid">
+        <div class="grid grid-cols-1 gap-6 mt-16 md:grid-cols-2 lg:grid-cols-4" id="achievements-grid">
             {{-- Konten akan diisi oleh JavaScript --}}
         </div>
     </section>
 
     {{-- Members Section (Diubah untuk hanya menggunakan satu grid container) --}}
-    <section class="py-20 px-4 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-5xl mb-4">Members</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-4"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">
+    <section class="px-4 py-20 bg-white">
+        <div class="mx-auto max-w-7xl">
+            <div class="mb-12 text-center">
+                <h2 class="mb-4 text-5xl">Members</h2>
+                <div class="w-24 h-1 mx-auto mb-4 bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                <p class="max-w-2xl mx-auto text-gray-600">
                     Meet the talented members of NMIXX, each bringing their unique charm and exceptional skills to the group
                 </p>
             </div>
 
-            {{-- Tabs Navigation --}}
-            <div class="flex justify-center mb-12">
-                <div class="inline-flex bg-gray-100 rounded-lg p-1" role="tablist">
-                    {{-- Nilai data-tab harus sesuai dengan kata kunci di array 'position' di Supabase --}}
-                    <button class="px-6 py-2 rounded-md bg-white shadow-sm tab-button" data-tab="all">All Members</button>
-                    <button class="px-6 py-2 rounded-md tab-button" data-tab="vocalist">Vocalists</button>
-                    <button class="px-6 py-2 rounded-md tab-button" data-tab="dancer">Dancers</button>
-                    <button class="px-6 py-2 rounded-md tab-button" data-tab="rapper">Rappers</button>
-                </div>
-            </div>
+
 
             {{-- CONTAINER UTAMA ANGGOTA (Semua filter akan render di sini) --}}
             {{-- Kita hapus div tab-content yang lain --}}
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="members-grid">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" id="members-grid">
                 {{-- Konten akan diisi oleh JavaScript --}}
             </div>
         </div>
     </section>
 
     {{-- Discography Section (ID Ditambahkan, Konten Dihapus) --}}
-    <section class="py-20 px-4 bg-gradient-to-b from-pink-50 to-purple-50">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-5xl mb-4">Discography</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-4"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">
+    <section class="px-4 py-20 bg-gradient-to-b from-pink-50 to-purple-50">
+        <div class="mx-auto max-w-7xl">
+            <div class="mb-12 text-center">
+                <h2 class="mb-4 text-5xl">Discography</h2>
+                <div class="w-24 h-1 mx-auto mb-4 bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                <p class="max-w-2xl mx-auto text-gray-600">
                     Explore NMIXX's innovative discography featuring their signature MIXX POP sound
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="discography-grid">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4" id="discography-grid">
                 {{-- Konten akan diisi oleh JavaScript --}}
             </div>
         </div>
     </section>
 
     {{-- Footer (Tidak Diubah) --}}
-    <footer class="bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 text-white py-12 px-4">
-        <div class="max-w-7xl mx-auto text-center">
-            <h3 class="text-4xl mb-4">NMIXX</h3>
-            <p class="text-xl mb-6 opacity-90">엔믹스 • Mix & Match</p>
+    <footer class="px-4 py-12 text-white bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600">
+        <div class="mx-auto text-center max-w-7xl">
+            <h3 class="mb-4 text-4xl">NMIXX</h3>
+            <p class="mb-6 text-xl opacity-90">엔믹스 • Mix & Match</p>
             <p class="text-sm opacity-75">
-                © JYP Entertainment. All rights reserved.
+                © ditto7. All rights reserved.
             </p>
-            <div class="mt-6 flex items-center justify-center gap-4 text-sm">
-                <span>Official Fandom: NSWER</span>
-                <div class="h-4 w-px bg-white/50"></div>
+            <div class="flex items-center justify-center gap-4 mt-6 text-sm">
+                <span>ditto7</span>
+                <div class="w-px h-4 bg-white/50"></div>
                 <span>Debut: February 22, 2022</span>
             </div>
         </div>
@@ -168,7 +160,7 @@
         // 1. IMPORT DAN VARIABEL GLOBAL
         import {
             supabase
-        } from './js/supabaseClient.js';
+        } from '/js/supabaseClient.js';
 
         let allMembersData = [];
 
@@ -180,18 +172,18 @@
 
             return `
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
-                    <div class="h-64 relative">
-                        <div style="background-color: ${bgColor};" class="h-2 absolute top-0 inset-x-0"></div>
-                        <img 
-                            src="${member.imageUrl || 'https://images.unsplash.com/photo-1730328300093-f85a92502ea2?w=400'}" 
-                            alt="${member.name}" 
-                            class="w-full h-full object-cover">
+                    <div class="relative h-64">
+                        <div style="background-color: ${bgColor};" class="absolute inset-x-0 top-0 h-2"></div>
+                        <img
+                            src="${member.image_url || 'https://images.unsplash.com/photo-1730328300093-f85a92502ea2?w=400'}" 
+                            alt="${member.name}"
+                            class="object-cover w-full h-full">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="text-3xl font-bold mb-1" style="color: ${bgColor};">
+                        <h3 class="mb-1 text-3xl font-bold" style="color: ${bgColor};">
                             ${member.name}
                         </h3>
-                        <p class="text-xl text-gray-700 mb-3">${member.koreanName || 'N/A'}</p>
+                        <p class="mb-3 text-xl text-gray-700">${member.korean_name || 'N/A'}</p>
                         <div class="space-y-2 text-sm text-gray-600">
                             <p class="font-semibold">${positions}</p>
                             <p>
@@ -215,34 +207,41 @@
             };
 
             return `
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div class="mb-3 mx-auto">${iconMap[achievement.icon] || iconMap['trophy']}</div>
-                    <h4 class="text-xl font-semibold mb-2 text-gray-800">${achievement.title}</h4>
-                    <p class="text-gray-600 text-sm">${achievement.description}</p>
-                </div>
-            `;
+        <div class="p-6 text-center bg-white rounded-lg shadow-md">
+            <div class="mx-auto mb-3">
+                ${achievement.icon_url 
+                    ? `<img src="${achievement.icon_url}" alt="${achievement.achieve_name}" class="object-contain w-12 h-12 mx-auto" />` 
+                    : iconMap['trophy']
+                }
+            </div>
+            <h4 class="mb-2 text-xl font-semibold text-gray-800">${achievement.achieve_name}</h4>
+            <p class="text-sm text-gray-600">${achievement.description}</p>
+        </div>
+    `;
         }
+
+
 
         function createAlbumCard(album) {
             const tracksHtml = album.tracks && Array.isArray(album.tracks) ?
                 album.tracks.map(track => `<li class="text-sm text-gray-600">${track}</li>`).join('') : '';
 
             return `
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <img 
-                        src="${album.imageUrl || 'https://images.unsplash.com/photo-1644855640845-ab57a047320e?w=400'}" 
+                <div class="overflow-hidden bg-white shadow-lg rounded-xl">
+                    <img
+                        src="${album.image_url || 'https://images.unsplash.com/photo-1644855640845-ab57a047320e?w=400'}" 
                         alt="${album.title}" 
-                        class="w-full h-auto object-cover">
+                        class="object-cover w-full h-auto">
                     <div class="p-5">
-                        <span class="text-xs font-medium text-purple-600 bg-purple-100 px-3 py-1 rounded-full mb-2 inline-block">
+                        <span class="inline-block px-3 py-1 mb-2 text-xs font-medium text-purple-600 bg-purple-100 rounded-full">
                             ${album.type || 'N/A'}
                         </span>
-                        <h4 class="text-xl font-bold text-gray-900 mb-2">${album.title}</h4>
-                        <p class="text-sm text-gray-500 mb-4">Released: ${album.releaseDate || 'N/A'}</p>
+                        <h4 class="mb-2 text-xl font-bold text-gray-900">${album.title}</h4>
+                        <p class="mb-4 text-sm text-gray-500">Released: ${album.release_date || 'N/A'}</p>
                         ${tracksHtml ? `
-                            <div class="border-t pt-3">
-                                <h5 class="text-sm font-semibold mb-1 text-gray-700">Tracklist:</h5>
-                                <ul class="list-disc list-inside ml-2">
+                            <div class="pt-3 border-t">
+                                <h5 class="mb-1 text-sm font-semibold text-gray-700">Tracklist:</h5>
+                                <ul class="ml-2 list-disc list-inside">
                                     ${tracksHtml}
                                 </ul>
                             </div>
@@ -273,7 +272,7 @@
             if (filteredMembers.length > 0) {
                 htmlContent = filteredMembers.map(createMemberCard).join('');
             } else {
-                htmlContent = '<p class="text-center col-span-full text-gray-500">Tidak ada anggota yang ditemukan untuk filter ini.</p>';
+                htmlContent = '<p class="text-center text-gray-500 col-span-full">Tidak ada anggota yang ditemukan untuk filter ini.</p>';
             }
 
             gridContainer.innerHTML = htmlContent;
@@ -318,7 +317,7 @@
             } = await supabase
                 .from('albums')
                 .select('*')
-                .order('releaseDate', {
+                .order('release_date', {
                     ascending: false
                 });
 
