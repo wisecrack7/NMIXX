@@ -1,4 +1,3 @@
-{{-- resources/views/components/achievement-card.blade.php --}}
 @props(['icon', 'title', 'description'])
 
 @php

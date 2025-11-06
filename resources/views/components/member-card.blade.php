@@ -1,4 +1,3 @@
-{{-- resources/views/components/member-card.blade.php --}}
 @props(['name', 'koreanName', 'position', 'birthdate', 'nationality', 'imageUrl', 'color'])
 
 <div class="overflow-hidden rounded-lg border bg-white shadow-sm hover:shadow-lg transition-shadow">

@@ -11,7 +11,6 @@
 
 <body class="min-h-screen bg-gradient-to-b from-white to-pink-50">
 
-    {{-- Hero Section (Tidak Diubah) --}}
     <section class="relative flex items-center justify-center h-screen overflow-hidden">
         <div class="absolute inset-0 z-10 bg-gradient-to-r from-pink-500/90 via-purple-500/90 to-blue-500/90"></div>
         <img
@@ -53,7 +52,6 @@
         </div>
     </section>
 
-    {{-- About Section (Tidak Diubah kecuali penambahan ID pada Achievements Grid) --}}
     <section class="px-4 py-20 mx-auto max-w-7xl">
         <div class="mb-12 text-center">
             <h2 class="mb-4 text-5xl">About NMIXX</h2>
@@ -95,13 +93,11 @@
             </div>
         </div>
 
-        {{-- Achievements Grid (ID Ditambahkan, Konten Dihapus) --}}
         <div class="grid grid-cols-1 gap-6 mt-16 md:grid-cols-2 lg:grid-cols-4" id="achievements-grid">
-            {{-- Konten akan diisi oleh JavaScript --}}
+
         </div>
     </section>
 
-    {{-- Members Section (Diubah untuk hanya menggunakan satu grid container) --}}
     <section class="px-4 py-20 bg-white">
         <div class="mx-auto max-w-7xl">
             <div class="mb-12 text-center">
@@ -114,15 +110,13 @@
 
 
 
-            {{-- CONTAINER UTAMA ANGGOTA (Semua filter akan render di sini) --}}
-            {{-- Kita hapus div tab-content yang lain --}}
+
+
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" id="members-grid">
-                {{-- Konten akan diisi oleh JavaScript --}}
             </div>
         </div>
     </section>
 
-    {{-- Discography Section (ID Ditambahkan, Konten Dihapus) --}}
     <section class="px-4 py-20 bg-gradient-to-b from-pink-50 to-purple-50">
         <div class="mx-auto max-w-7xl">
             <div class="mb-12 text-center">
@@ -134,12 +128,11 @@
             </div>
 
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4" id="discography-grid">
-                {{-- Konten akan diisi oleh JavaScript --}}
             </div>
         </div>
     </section>
 
-    {{-- Footer (Tidak Diubah) --}}
+
     <footer class="px-4 py-12 text-white bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600">
         <div class="mx-auto text-center max-w-7xl">
             <h3 class="mb-4 text-4xl">NMIXX</h3>
@@ -155,16 +148,15 @@
         </div>
     </footer>
 
-    {{-- SCRIPT JAVASCRIPT LENGKAP UNTUK FETCHING DAN RENDERING --}}
+
     <script type="module">
-        // 1. IMPORT DAN VARIABEL GLOBAL
         import {
             supabase
         } from '/js/supabaseClient.js';
 
         let allMembersData = [];
 
-        // --- 2. CARD BUILDER FUNCTIONS ---
+
 
         function createMemberCard(member) {
             const positions = Array.isArray(member.position) ? member.position.join(' &bull; ') : (member.position || 'N/A');
@@ -209,7 +201,7 @@
             return `
         <div class="p-6 text-center bg-white rounded-lg shadow-md">
             <div class="mx-auto mb-3">
-                ${achievement.icon_url 
+                ${achievement.icon_url
                     ? `<img src="${achievement.icon_url}" alt="${achievement.achieve_name}" class="object-contain w-12 h-12 mx-auto" />` 
                     : iconMap['trophy']
                 }
@@ -251,7 +243,6 @@
             `;
         }
 
-        // --- 3. RENDERER FUNCTIONS ---
 
         function renderMembers(filter = 'all') {
             const gridContainer = document.getElementById('members-grid');
@@ -259,7 +250,6 @@
 
             let filteredMembers = allMembersData;
 
-            // Logika Filtering: Memeriksa apakah kata kunci filter ada di salah satu posisi
             if (filter !== 'all') {
                 filteredMembers = allMembersData.filter(member =>
                     Array.isArray(member.position) && member.position.some(p =>
@@ -292,10 +282,8 @@
             }
         }
 
-        // --- 4. DATA FETCHING UTAMA ---
 
         async function fetchNmixxData() {
-            // A. Fetch Members
             const {
                 data: members,
                 error: memberError
@@ -307,10 +295,10 @@
                 console.error('Gagal mengambil data Anggota:', memberError);
             } else if (members) {
                 allMembersData = members;
-                renderMembers('all'); // Render semua anggota saat inisialisasi
+                renderMembers('all');
             }
 
-            // B. Fetch Albums
+
             const {
                 data: albums,
                 error: albumError
@@ -327,7 +315,6 @@
                 renderDiscography(albums);
             }
 
-            // C. Fetch Achievements
             const {
                 data: achievements,
                 error: achievementError
@@ -343,26 +330,21 @@
         }
 
 
-        // --- 5. INITIALIZATION & TAB SWITCHING LOGIC ---
-
         document.addEventListener('DOMContentLoaded', function() {
-            // 1. Panggil fungsi utama untuk memulai fetching data
             fetchNmixxData();
 
-            // 2. Logic Tab Switching
             const tabButtons = document.querySelectorAll('.tab-button');
 
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     const filterName = button.dataset.tab;
 
-                    // A. Update UI Tab Button
                     tabButtons.forEach(btn => {
                         btn.classList.remove('bg-white', 'shadow-sm');
                     });
                     button.classList.add('bg-white', 'shadow-sm');
 
-                    // B. Panggil fungsi rendering dengan filter baru
+
                     renderMembers(filterName);
                 });
             });
