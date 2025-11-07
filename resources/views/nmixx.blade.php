@@ -13,10 +13,8 @@
 
     <section class="relative flex items-center justify-center h-screen overflow-hidden">
         <div class="absolute inset-0 z-10 bg-gradient-to-r from-pink-500/90 via-purple-500/90 to-blue-500/90"></div>
-        <img
-            src="https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/sign/nmixx-assets/NMIXX%20Full.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zOTBkZWY4OS03MWQ5LTQyY2QtOTI0NC03MDAyM2VlMmIxNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJubWl4eC1hc3NldHMvTk1JWFggRnVsbC5qcGciLCJpYXQiOjE3NjIzMjk5OTEsImV4cCI6MTc5Mzg2NTk5MX0.FCF3pMemzce6spBIgR6FazwuD7oFvz8H0t7wPuF-l-o"
-            alt="NMIXX Performance"
-            class="absolute inset-0 object-cover w-full h-full">
+        <img src="https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/sign/nmixx-assets/NMIXX%20Full.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zOTBkZWY4OS03MWQ5LTQyY2QtOTI0NC03MDAyM2VlMmIxNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJubWl4eC1hc3NldHMvTk1JWFggRnVsbC5qcGciLCJpYXQiOjE3NjIzMjk5OTEsImV4cCI6MTc5Mzg2NTk5MX0.FCF3pMemzce6spBIgR6FazwuD7oFvz8H0t7wPuF-l-o"
+            alt="NMIXX Performance" class="absolute inset-0 object-cover w-full h-full">
         <div class="relative z-20 px-4 text-center text-white">
             <div class="mb-6">
                 <span class="inline-block px-6 py-2 mb-4 text-lg text-purple-600 bg-white rounded-full">
@@ -30,7 +28,8 @@
             </p>
             <div class="flex items-center justify-center gap-4 mt-8">
                 <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                         <circle cx="9" cy="7" r="4" />
                         <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
@@ -40,7 +39,8 @@
                 </div>
                 <div class="w-px h-6 bg-white/50"></div>
                 <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
                         <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
                         <line x1="16" x2="16" y1="2" y2="6" />
                         <line x1="8" x2="8" y1="2" y2="6" />
@@ -59,11 +59,10 @@
         </div>
 
         <div class="grid items-center gap-8 mb-16 md:grid-cols-2">
-            <div class="relative flex items-center justify-center w-full overflow-hidden bg-gray-200 rounded-lg shadow-2xl h-96">
-                <img
-                    src="https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/sign/nmixx-assets/nmixxx.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zOTBkZWY4OS03MWQ5LTQyY2QtOTI0NC03MDAyM2VlMmIxNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJubWl4eC1hc3NldHMvbm1peHh4LmpwZyIsImlhdCI6MTc2MjMzMDc3MywiZXhwIjoxNzkzODY2NzczfQ.-3QmsCDlvDi2i0ouLGr_t85ThuzL5Gc7ITu4E6NKJTI"
-                    alt="NMIXX Stage"
-                    class="absolute inset-0 object-cover object-center w-full h-full">
+            <div
+                class="relative flex items-center justify-center w-full overflow-hidden bg-gray-200 rounded-lg shadow-2xl h-96">
+                <img src="https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/sign/nmixx-assets/nmixxx.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zOTBkZWY4OS03MWQ5LTQyY2QtOTI0NC03MDAyM2VlMmIxNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJubWl4eC1hc3NldHMvbm1peHh4LmpwZyIsImlhdCI6MTc2MjMzMDc3MywiZXhwIjoxNzkzODY2NzczfQ.-3QmsCDlvDi2i0ouLGr_t85ThuzL5Gc7ITu4E6NKJTI"
+                    alt="NMIXX Stage" class="absolute inset-0 object-cover object-center w-full h-full">
             </div>
 
             <div class="space-y-6">
@@ -104,7 +103,8 @@
                 <h2 class="mb-4 text-5xl">Members</h2>
                 <div class="w-24 h-1 mx-auto mb-4 bg-gradient-to-r from-pink-500 to-purple-500"></div>
                 <p class="max-w-2xl mx-auto text-gray-600">
-                    Meet the talented members of NMIXX, each bringing their unique charm and exceptional skills to the group
+                    Meet the talented members of NMIXX, each bringing their unique charm and exceptional skills to the
+                    group
                 </p>
             </div>
 
@@ -159,22 +159,23 @@
 
 
         function createMemberCard(member) {
-            const positions = Array.isArray(member.position) ? member.position.join(' &bull; ') : (member.position || 'N/A');
+            const positions = Array.isArray(member.position) ? member.position.join(' &bull; ') : (member.position ||
+                'N/A');
             const bgColor = member.color || '#C4A1FF';
 
             return `
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300">
                     <div class="relative h-64">
                         <div style="background-color: ${bgColor};" class="absolute inset-x-0 top-0 h-2"></div>
                         <img
-                            src="${member.image_url || 'https://images.unsplash.com/photo-1730328300093-f85a92502ea2?w=400'}" 
+                            src="${member.image_url || 'https://images.unsplash.com/photo-1730328300093-f85a92502ea2?w=400'}"
                             alt="${member.name}"
                             class="object-cover w-full h-full">
                     </div>
                     <div class="p-6 text-center">
-                        <h3 class="mb-1 text-3xl font-bold" style="color: ${bgColor};">
+                        <a href="${member.bio_url}" target="_blank" class="block mt-4 text-xl font-semibold text-gray-800 transition hover:text-blue-600">
                             ${member.name}
-                        </h3>
+                            </a>
                         <p class="mb-3 text-xl text-gray-700">${member.korean_name || 'N/A'}</p>
                         <div class="space-y-2 text-sm text-gray-600">
                             <p class="font-semibold">${positions}</p>
@@ -202,7 +203,7 @@
         <div class="p-6 text-center bg-white rounded-lg shadow-md">
             <div class="mx-auto mb-3">
                 ${achievement.icon_url
-                    ? `<img src="${achievement.icon_url}" alt="${achievement.achieve_name}" class="object-contain w-12 h-12 mx-auto" />` 
+                    ? `<img src="${achievement.icon_url}" alt="${achievement.achieve_name}" class="object-contain w-12 h-12 mx-auto" />`
                     : iconMap['trophy']
                 }
             </div>
@@ -218,10 +219,42 @@
             const tracksHtml = album.tracks && Array.isArray(album.tracks) ?
                 album.tracks.map(track => `<li class="text-sm text-gray-600">${track}</li>`).join('') : '';
 
+            const streamingPlatform = `
+        <div class="pt-4 mt-5 border-t border-gray-100">
+            <h5 class="mb-3 text-sm font-semibold text-gray-700">Listen On:</h5>
+            <div class="flex items-center justify-start space-x-4">
+
+                <a href="${album.YouTube || '#'}" target="_blank"
+                class="text-red-600 transition duration-150 hover:text-red-700" aria-label="Listen on YouTube">
+                    <img src='https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/public/icon/YouTube_social_white_square_(2017).svg.png' || 'placeholder.png'}"
+                    alt="YouTube" class="object-contain w-8 h-8">
+                </a>
+
+                <a href="${album.Spotify || '#'}" target="_blank"
+                class="text-green-500 transition duration-150 hover:text-green-600" aria-label="Listen on Spotify">
+                    <img src='https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/public/icon/Spotify.png' || 'placeholder.png'}"
+                    alt="Spotify" class="object-contain w-8 h-8">
+                </a>
+
+                <a href="${album.SoundCloud || '#'}" target="_blank"
+                class="text-orange-500 transition duration-150 hover:text-orange-600" aria-label="Listen on SoundCloud">
+                    <img src='https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/public/icon/Soundcloud-icon-2.webp' || 'placeholder.png'}"
+                    alt="SoundCloud" class="object-contain w-8 h-8">
+                </a>
+
+                <a href="${album.AppleMusic || '#'}" target="_blank"
+                class="text-pink-600 transition duration-150 hover:text-pink-700" aria-label="Listen on Apple Music">
+                    <img src='https://tucffzhwwvelzaziazer.supabase.co/storage/v1/object/public/icon/MusicApple.jpg' || 'placeholder.png'}"
+                    alt="Apple Music" class="object-contain w-8 h-8">
+                </a>
+            </div>
+        </div>
+    `;
+
             return `
                 <div class="overflow-hidden bg-white shadow-lg rounded-xl">
                     <img
-                        src="${album.image_url || 'https://images.unsplash.com/photo-1644855640845-ab57a047320e?w=400'}" 
+                        src="${album.image_url || 'https://images.unsplash.com/photo-1644855640845-ab57a047320e?w=400'}"
                         alt="${album.title}"
                         class="object-cover w-full h-auto">
                     <div class="p-5">
@@ -231,13 +264,14 @@
                         <h4 class="mb-2 text-xl font-bold text-gray-900">${album.title}</h4>
                         <p class="mb-4 text-sm text-gray-500">Released: ${album.release_date || 'N/A'}</p>
                         ${tracksHtml ? `
-                            <div class="pt-3 border-t">
-                                <h5 class="mb-1 text-sm font-semibold text-gray-700">Tracklist:</h5>
-                                <ul class="ml-2 list-disc list-inside">
-                                    ${tracksHtml}
-                                </ul>
-                            </div>
-                        ` : ''}
+                                                                                                                                    <div class="pt-3 border-t">
+                                                                                                                                        <h5 class="mb-1 text-sm font-semibold text-gray-700">Tracklist:</h5>
+                                                                                                                                        <ul class="ml-2 list-disc list-inside">
+                                                                                                                                            ${tracksHtml}
+                                                                                                                                        </ul>
+                                                                                                                                    </div>
+                                                                                                                                ` : ''}
+                                                                ${streamingPlatform}
                     </div>
                 </div>
             `;
@@ -262,7 +296,8 @@
             if (filteredMembers.length > 0) {
                 htmlContent = filteredMembers.map(createMemberCard).join('');
             } else {
-                htmlContent = '<p class="text-center text-gray-500 col-span-full">Tidak ada anggota yang ditemukan untuk filter ini.</p>';
+                htmlContent =
+                    '<p class="text-center text-gray-500 col-span-full">Tidak ada anggota yang ditemukan untuk filter ini.</p>';
             }
 
             gridContainer.innerHTML = htmlContent;
