@@ -222,7 +222,7 @@
                 <div class="overflow-hidden bg-white shadow-lg rounded-xl">
                     <img
                         src="${album.image_url || 'https://images.unsplash.com/photo-1644855640845-ab57a047320e?w=400'}" 
-                        alt="${album.title}" 
+                        alt="${album.title}"
                         class="object-cover w-full h-auto">
                     <div class="p-5">
                         <span class="inline-block px-3 py-1 mb-2 text-xs font-medium text-purple-600 bg-purple-100 rounded-full">
